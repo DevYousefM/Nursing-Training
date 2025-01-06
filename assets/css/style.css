@@ -1,0 +1,155 @@
+* {
+  font-family: "Cairo", serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+footer {
+  width: 100%;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1rem;
+}
+footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.image {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.section.image {
+  /* height: 300px; */
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.section {
+  margin-bottom: 20px;
+}
+.text-center {
+  text-align: center;
+}
+.green {
+  color: #008000 !important;
+}
+.text-warning {
+  color: #ffc107 !important;
+}
+.text-primary {
+  color: #0088cc !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
+.bg-black {
+  background-color: #000000 !important;
+}
+.pt-1 {
+  padding-top: 10px;
+}
+.p-1 {
+  padding: 10px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.fs-1 {
+  font-size: 0.5rem;
+}
+.fs-2 {
+  font-size: 1rem;
+}
+.fs-3 {
+  font-size: 1.5rem;
+}
+h2 {
+  margin: 5px;
+}
+p,
+ul {
+  margin-top: 0;
+}
+.section h2 {
+  color: #cc0000;
+  font-size: 1.5rem;
+}
+
+.section p {
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: #ffe4b5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.fees {
+  color: #008000;
+  font-weight: bold;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.contact-methods {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-methods li {
+  margin-bottom: 10px;
+}
+
+.image-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.image-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.details-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.note {
+  background-color: #f0f8ff;
+  padding: 10px;
+  border-left: 4px solid #0088cc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .section h2 {
+    font-size: 1.2rem;
+  }
+}

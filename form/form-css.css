@@ -1,0 +1,204 @@
+* {
+  font-family: "Cairo", serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ede6f6;
+  direction: rtl;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  outline: none;
+  border: none;
+}
+h3 {
+  margin-top: 5px;
+  font-size: 15px;
+}
+.main {
+  height: fit-content;
+  width: 50vw;
+  box-sizing: border-box;
+  background-color: white;
+  border-top: 12px solid #663ab5;
+  border-radius: 10px;
+  margin: 13px;
+  margin-bottom: 0;
+  padding: 10px;
+  padding-right: 30px;
+  font-size: 13px;
+}
+.main h1 {
+  font-size: 20px;
+}
+.form-group {
+  background-color: white;
+  box-sizing: border-box;
+  height: fit-content;
+  width: 50vw;
+  margin: 13px;
+  padding: 15px 25px 20px 0;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+input[type="text"],
+[type="email"] {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 60%;
+  padding: 5px;
+}
+.submit {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+button {
+  margin: 13px;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 8px 28px;
+  border-radius: 3px;
+  background-color: #663ab5;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #452286;
+  transition: ease-in 200ms;
+}
+.rule {
+  width: 50vw;
+  margin-top: 15px;
+  font-size: 13px;
+  color: grey;
+}
+.policy {
+  font-size: 14px;
+  color: grey;
+  text-align: center;
+}
+.policy a {
+  text-decoration: none;
+  color: grey;
+  text-decoration: underline;
+}
+img {
+  margin-top: 13px;
+  height: 200px;
+  width: 50vw;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 10px;
+}
+
+.Google {
+  text-align: center;
+}
+/*  */
+.required {
+  color: red;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-right: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+}
+
+.radio-container input:checked ~ .checkmark {
+  border-color: #6a1b9a;
+  background-color: #fff;
+}
+
+.radio-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radio-container .checkmark:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #6a1b9a;
+}
+
+@media only screen and (max-width: 1000px) {
+  img,
+  .main,
+  .form-group,
+  .submit,
+  .rule,
+  .policy,
+  .Google {
+    width: 90vw;
+  }
+  img {
+    height: 125px;
+  }
+  .main {
+    height: 180px;
+    font-size: 12px;
+  }
+  .form-group {
+    height: 130px;
+    font-size: 12px;
+  }
+
+  .main h1 {
+    font-size: 18px;
+  }
+  .main p,
+  h4 {
+    margin: 10px 0px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  input[type="text"],
+  [type="email"] {
+    padding: 5;
+  }
+
+  button {
+    padding: 10px 22px;
+    border-radius: 5px;
+  }
+}
