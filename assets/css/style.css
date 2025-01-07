@@ -22,25 +22,27 @@ footer a {
 
 .container {
   padding: 20px;
-  max-width: 1000px;
+  width: 65%;
   margin: 0 auto;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
+@media (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+}
 .image {
-  height: 300px;
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 20px;
 }
 .section.image {
-  /* height: 300px; */
   width: 100%;
   overflow: hidden;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .section {
   margin-bottom: 20px;
@@ -88,6 +90,7 @@ p,
 ul {
   margin-top: 0;
 }
+
 .section h2 {
   color: #cc0000;
   font-size: 1.5rem;
